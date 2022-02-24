@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CODEX</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/contacts.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	</head>
+	<body>
+		<div id="layout">
+			<div id="header">
+				<div>
+					<span id="contactCount">Contacts</span>
+				</div>
+				<div id="search">
+					<button type="button" id="createContact">Add Contact</button>
+					<input id="searchBar" placeholder="Search">
+				</div>
+			</div>
+			<div id="main">
+				<div id="table-header">
+					<table>
+						<tr>
+							<th>First</th>
+							<th>Last</th>
+							<th>Email</th>
+							<th>Phone</th>
+							<th id="actions">Actions</th>
+						</tr>
+					</table>
+				</div>
+				<div id="table-content">
+					<table></table>
+				</div>
+			</div>
+			<div id="footer">
+				<div>
+					<button type="button" class="editBtn disabled">Edit</button>
+					<button type="button" class="removeBtn disabled">Remove</button>
+				</div>
+				<button type="button" id="logout">Logout</button>
+			</div>
+		</div>
+	</body>
+	<script type="module" src="js/contact-page/contacts.js"></script>
+</html>

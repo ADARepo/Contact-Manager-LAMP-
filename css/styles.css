@@ -1,0 +1,75 @@
+/* primary styleing used across the app */
+
+/* ":root" is a way to declare variables inside CSS for concistant syling */
+:root {
+	/* Voted Colour of the Year 2022 */
+	
+
+	/* Colour Pallete */
+	--color-main:              hsl(239, 29%, 54%);   /*#6667ab*/
+	--color-accent-dark:       hsl(252, 6%, 17%);    /*#29282d*/
+	--color-accent-gray:       hsl(320, 3%, 37%);    /*#625c60*/
+	--color-accent-light:      hsl(30, 22%, 93%);    /*#f1ede9*/
+
+	/* --color-accent-light-tint: #aea392; */
+	
+}
+
+::placeholder {
+	color: var(--color-accent-dark);
+}
+
+/* With just "*", we are selecting ALL elements and giving it the following 
+   properties.
+*/
+* {
+	/* HTML tags have "hardcoded" margins and padding, I'm removing those for
+	   consistant styling throughout the page. */ 
+	margin: 0;
+	padding: 0;
+
+	/* prevent the user from highlighting anything */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; 	 /* Safari */
+	-moz-user-select: none; 	 /* Firefox */
+	-ms-user-select: none; 		 /* Edge */
+	user-select: none;
+
+	font-family:'Courier New', Courier, monospace;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+#header {
+	background-color: hsl(239, 45%, 60%);
+	display: flex;
+}
+
+/* Enable users highlight their text in input fields */
+input {
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+	background-color: hsla(30, 22%, 100%, .75);
+	padding-left: 10px;
+}
+
+button {
+	background-color: hsl(239, 45%, 60%);
+}
+
+#footer {
+	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer a {
+	font-size: .8em;
+}
